@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------------------*/
+/* Configuration Bits														*/
+/* See file : ..\program files\Microchip\xc16\vx.xx\docs\config_index.html	*/
+/*--------------------------------------------------------------------------*/
+
+//----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------*/
+/* PIC24FJ128GA010															*/
+/*--------------------------------------------------------------------------*/
+#pragma config POSCMOD = HS         // Primary Oscillator Select (EC, XT, HS, NONE)
+#pragma config OSCIOFNC = ON        // Primary Oscillator Output Function (ON, OFF)
+#pragma config FCKSM = CSDCMD       // Clock Switching and Monitor (CSECME, CSECMD, CSDCMD)
+#pragma config FNOSC = PRI          // Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, FRCDIV)
+#pragma config IESO = OFF           // Internal External Switch Over Mode (ON, OFF)
+#pragma config WDTPS = PS256        // Watchdog Timer Postscaler (PS1, PS2, PS4, PS8,..., PS32768)
+#pragma config FWPSA = PR32         // WDT Prescaler (PR32, PR128)
+#pragma config WINDIS = ON          // Watchdog Timer Window (ON, OFF)
+#pragma config FWDTEN = OFF         // Watchdog Timer Enable (ON, OFF)
+#pragma config ICS = PGx2           // Comm Channel Select (PGx1, PGx2)
+#pragma config BKBUG = OFF          // Background Debug (ON, OFF)
+#pragma config GWRP = OFF           // General Code Segment Write Protect (ON, OFF)
+#pragma config GCP = OFF            // General Code Segment Code Protect (ON, OFF)
+#pragma config JTAGEN = OFF         // JTAG Port Enable (ON, OFF)
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+/*--------------------------------------------------------------------------*/
+/* PIC24FJ256GB106															*/
+/*--------------------------------------------------------------------------*/
+#pragma config	WPFP = WPFP0
+#pragma config	WPDIS = WPDIS		// Segment Write Protection (WPEN, WPDIS)
+#pragma config	WPCFG = WPCFGDIS	// Configuration Word Code Page Protection (WPCFGDIS,WPCFGEN)
+#pragma config	WPEND = WPSTARTMEM	// Segment Write Protection End Page Select bit (WPSTARTMEM,WPENDMEM)
+#pragma config	POSCMOD = EC        // Primary Oscillator Select (EC, XT, HS, NONE)
+#pragma config	DISUVREG = ON		// Internal USB 3.3V Regulator Disable bit (ON, OFF)
+#pragma config	IOL1WAY = OFF		// IOLOCK One-Way Set Enable bit (ON, OFF)
+#pragma config	OSCIOFNC = OFF		// Primary Oscillator Output Function (ON, OFF)
+#pragma config 	FCKSM = CSDCMD      // Clock Switching and Monitor (CSECME, CSECMD, CSDCMD)
+#pragma config 	FNOSC = PRI         // Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, FRCDIV)
+#pragma config	PLL_96MHZ = ON		// 96MHz PLL Disable
+#pragma config	PLLDIV = NODIV		// USB 96 MHz PLL Prescaler Select bits
+#pragma config  IESO = OFF          // Internal External Switch Over Mode (ON, OFF)
+#pragma config  WDTPS = PS256       // Watchdog Timer Postscaler (PS1, PS2, PS4, PS8,..., PS32768)
+#pragma config  FWPSA = PR32        // WDT Prescaler (PR32, PR128)
+#pragma config  WINDIS = ON         // Watchdog Timer Window (ON, OFF)
+#pragma config  FWDTEN = OFF        // Watchdog Timer Enable (ON, OFF)
+#pragma config  ICS = PGx2          // Comm Channel Select (PGx1, PGx2, PGx3)
+/* #pragma config  COE = OFF           // Set Clip On Emulation Mode (ON, OFF)   // Non valide pour xc16 >= V1.33 */
+#pragma config  BKBUG = OFF         // Background Debug (ON, OFF)
+#pragma config  GWRP = OFF          // General Code Segment Write Protect (ON, OFF)
+#pragma config  GCP = OFF           // General Code Segment Code Protect (ON, OFF)
+#pragma config  JTAGEN = OFF        // JTAG Port Enable (ON, OFF)
+//----------------------------------------------------------------------------
+
+/*--------------------------------------------------------------------------*/
+/* PIC24FJ256GB106															*/
+/*--------------------------------------------------------------------------*/
+#pragma config	BWRP = OFF
+#pragma config	BSS = DISABLED 
+#pragma config	BSEN = OFF
+#pragma config	GWRP = OFF
+#pragma config	GSS = DISABLED
+#pragma config	CWRP = OFF
+#pragma config	CSS = DISABLED
+#pragma config	AIVTDIS = OFF
+#pragma config	BSLIM = BSLIM
+#pragma config	FNOSC = PRI
+#pragma config	PLLMODE = DISABLED
+#pragma config	IESO = OFF
+#pragma config	POSCMD = HS
+#pragma config	OSCIOFCN = OFF
+#pragma config	SOSCEL = OFF
+#pragma config	PLLSS = PLL_PRI
+#pragma config	IOL1WAY = OFF
+#pragma config	FCKSM = CSDCMD
+#pragma config	WDTPS = PS1
+#pragma config	FWPSA = PR32
+#pragma config	FWDTEN = OFF
+#pragma config	WINDIS = OFF
+#pragma config	WDTWIN = WIN50
+#pragma config	WDTCMX = LPRC
+#pragma config	WDTCLK = LPRC
+#pragma config	BOREN = OFF
+#pragma config	LPCFG = OFF
+#pragma config	DNVPEN = DISABLED
+#pragma config	ICS = PGX2
+#pragma config	JTAGEN = OFF
+#pragma config	BTSWP = OFF
+#pragma config	ALTCMPI = DISABLE
+#pragma config	TMPRPIN = OFF
+#pragma config	SOSCHP = OFF
+#pragma config	ALTVREF = ALTVREFDIS
+#pragma config	BTMODE = SINGLE
+
+/*--------------------------------------------------------------------------*/
+/* PIC24FV16KM202	-  /!\ 24FV = 5V version														*/
+/*--------------------------------------------------------------------------*/
+#pragma config	BWRP = OFF		//	(ON, OFF)
+#pragma config	BSS = OFF		//	(HI2K, HI1K, STD2K, STD1K, OFF)
+#pragma config	GWRP = OFF		//	(ON, OFF)
+#pragma config	GCP = OFF		//	(ON, OFF)
+#pragma config 	FNOSC = FRC     // 	Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, LPFRC, FRCDIV)
+#pragma config 	SOSCSRC = DIG	//	(DIG, ANA)
+#pragma config 	LPRCSEL = HP	// 	(LP, HP)
+#pragma config 	IESO = OFF      // 	Internal External Switch Over Mode (ON, OFF)
+#pragma config 	POSCMOD = NONE  // 	Primary Oscillator Select (EC, XT, HS, NONE)
+#pragma config 	OSCIOFNC = IO 	// 	CLKO Enable Configuration bit (IO, CLKO)
+#pragma config	POSCFREQ = MS	//	Primary Oscillator Frequency Range Configuration bits (LS, MS, HS)
+#pragma config	SOSCSEL	= SOSCLP //	SOSC Power Selection Configuration bits (SOSCLP, SOSCHP)
+#pragma config	FCKSM = CSDCMD	//	Clock Switching and Monitor Selection (CSECME, CSECMD, CSDCMD)
+#pragma config	WDTPS = PS512	//	Watchdog Timer Postscale Select bits
+#pragma config	FWPSA = PR32	//	WDT Prescaler bit (PR32, PR128)
+#pragma config	WINDIS = OFF	//	(ON, OFF)
+#pragma config	BOREN = BOR0	//	Brown-out Reset Enable bits (BOR0, BOR1, BOR2, BOR3)
+#pragma config	RETCFG = OFF	//	(ON, OFF)
+#pragma config	PWRTEN = OFF	//	Power-up Timer Enable bit (ON, OFF)
+#pragma config	I2C1SEL = PRI	//	Alternate I2C1 Pin Mapping bit (PRI, SEC)
+#pragma config	BORV = V27		//	Brown-out Reset Voltage bits (LPBOR, V30, V27, V18)
+#pragma config	MCLRE = ON		//	MCLR Pin Enable bit /!\ Toujours à ON pour programmation via PKOB (PicKit On Board)
+#pragma config	ICS = PGx2		//	ICD Pin Placement Select bits (PGx1, PGx2, PGx3)
+
+
+/*--------------------------------------------------------------------------*/
+/* PIC24F16KM202	-  /!\ 24F = 3.3V version														*/
+/*--------------------------------------------------------------------------*/
+#pragma config	BWRP = OFF		//	(ON, OFF)
+#pragma config	BSS = OFF		//	(HI2K, HI1K, STD2K, STD1K, OFF)
+#pragma config	GWRP = OFF		//	(ON, OFF)
+#pragma config	GCP = OFF		//	(ON, OFF)
+#pragma config 	FNOSC = FRC     // 	Oscillator Select (FRC, FRCPLL, PRI, PRIPLL, SOSC, LPRC, LPFRC, FRCDIV)
+#pragma config 	SOSCSRC = DIG	//	(DIG, ANA)
+#pragma config 	LPRCSEL = HP	// 	(LP, HP)
+#pragma config 	IESO = OFF      // 	Internal External Switch Over Mode (ON, OFF)
+#pragma config 	POSCMOD = NONE  // 	Primary Oscillator Select (EC, XT, HS, NONE)
+#pragma config 	OSCIOFNC = IO 	// 	CLKO Enable Configuration bit (IO, CLKO)
+#pragma config	POSCFREQ = MS	//	Primary Oscillator Frequency Range Configuration bits (LS, MS, HS)
+#pragma config	SOSCSEL	= SOSCLP //	SOSC Power Selection Configuration bits (SOSCLP, SOSCHP)
+#pragma config	FCKSM = CSDCMD	//	Clock Switching and Monitor Selection (CSECME, CSECMD, CSDCMD)
+#pragma config	WDTPS = PS512	//	Watchdog Timer Postscale Select bits
+#pragma config	FWPSA = PR32	//	WDT Prescaler bit (PR32, PR128)
+#pragma config	FWDTEN = OFF	//	Watchdog Timer Enable bits	
+#pragma config	WINDIS = OFF	//	(ON, OFF)
+#pragma config	BOREN = BOR0	//	Brown-out Reset Enable bits (BOR0, BOR1, BOR2, BOR3)
+#pragma config	PWRTEN = OFF	//	Power-up Timer Enable bit (ON, OFF)
+#pragma config	I2C1SEL = PRI	//	Alternate I2C1 Pin Mapping bit (PRI, SEC)
+#pragma config	BORV = V27		//	Brown-out Reset Voltage bits (LPBOR, V30, V27, V18)
+#pragma config	MCLRE = ON		//	MCLR Pin Enable bit /!\ Toujours à ON pour programmation via PKOB (PicKit On Board)
+#pragma config	ICS = PGx1		//	ICD Pin Placement Select bits (PGx1, PGx2, PGx3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
